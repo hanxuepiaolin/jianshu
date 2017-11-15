@@ -14,3 +14,7 @@
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('/login/{name}/{pwd}', function ($name,$pwd) {
+    return view('login');
+});
+
